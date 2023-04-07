@@ -19,8 +19,8 @@ public class ShareActivity extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            TextView textViewBook = findViewById(R.id.textViewBook);
-            String bookName = extras.getString(MainActivity.KEY);
+            TextView textViewBook = findViewById(R.id.textView);
+            String bookName = getIntent().getExtras().getString(MainActivity.KEY);
             textViewBook.setText(String.format("Моя любимая книга: %s", bookName));
         }
 

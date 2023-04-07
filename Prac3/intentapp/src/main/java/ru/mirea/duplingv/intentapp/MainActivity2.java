@@ -16,6 +16,6 @@ public class MainActivity2 extends AppCompatActivity {
 
         String dateString = (String) getIntent().getSerializableExtra("date");
         TextView DateTextView = findViewById(R.id.textViewForDate);
-        DateTextView.setText("КВАДРАТ ЗНАЧЕНИЯ МОЕГО НОМЕРА ПО СПИСКУ В ГРУУПЕ СОСТАВЛЯЕТ 121, а текущее время " + dateString);
+        DateTextView.setText("КВАДРАТ ЗНАЧЕНИЯ МОЕГО НОМЕРА ПО СПИСКУ В ГРУУПЕ\nСОСТАВЛЯЕТ 121\nТекущее время " + dateString);
     }
 }
